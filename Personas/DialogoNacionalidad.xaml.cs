@@ -9,6 +9,7 @@ namespace Personas
     public partial class DialogoNacionalidad : Window
     {
         DialogoNacionalidadVM vm;
+
         public DialogoNacionalidad()
         {
             InitializeComponent();

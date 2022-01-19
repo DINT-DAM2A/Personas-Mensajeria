@@ -13,7 +13,8 @@
         <!-- Bloque superior con Botones -->
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Height="20" Margin="0,0,0,10">
             <Button Height="20" Width="150" Command="{Binding Path=NewPersonCommand}">Nueva persona</Button>
-            <Button Height="20" Width="150" Margin="5,0" Command="{Binding Path=ListPersonsCommand}">Listado de personas</Button>
+            <Button Height="20" Width="150" Margin="5,0,0,0" Command="{Binding Path=ListPersonsCommand}">Listado de personas</Button>
+            <Button Height="20" Width="150" Margin="5,0,0,0" Command="{Binding Path=ConsultaPersonaCommand}">Consulta persona</Button>
         </StackPanel>
 
         <!-- Bloque inferior con el Contenedor -->

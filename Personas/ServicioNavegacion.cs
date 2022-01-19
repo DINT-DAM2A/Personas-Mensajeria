@@ -21,6 +21,11 @@ namespace Personas
             return listPersons;
         }
 
+        internal UserControl AbrirConsultaPersona()
+        {
+            return new ConsultaPersona();
+        }
+
         public bool? AbrirDialogoNacionalidad()
         {
             DialogoNacionalidad ventana = new DialogoNacionalidad();

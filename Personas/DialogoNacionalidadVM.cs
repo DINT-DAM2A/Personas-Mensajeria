@@ -10,8 +10,8 @@ namespace Personas
         {
         }
 
-        private String newNacionalidad;
-        public String NewNacionalidad
+        private string newNacionalidad;
+        public string NewNacionalidad
         {
             get { return newNacionalidad; }
             set { SetProperty(ref newNacionalidad, value); }

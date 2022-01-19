@@ -22,7 +22,7 @@
 
 
     <DockPanel Margin="10">
-        <ListBox ItemsSource="{Binding Path=ListaPersonas}">
+        <ListBox ItemsSource="{Binding Path=ListaPersonas}" SelectedItem="{Binding Path=PersonaSeleccionada}">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Vertical"></StackPanel>

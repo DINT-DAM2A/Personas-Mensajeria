@@ -19,9 +19,9 @@ namespace Personas
             Nacionalidad = nacionalidad;
         }
 
-        private String nombre;
+        private string nombre;
 
-        public String Nombre
+        public string Nombre
         {
             get { return nombre; }
             set { SetProperty(ref nombre, value); }
@@ -35,9 +35,9 @@ namespace Personas
             set { SetProperty(ref edad, value); }
         }
 
-        private String nacionalidad;
+        private string nacionalidad;
 
-        public String Nacionalidad
+        public string Nacionalidad
         {
             get { return nacionalidad; }
             set { SetProperty(ref nacionalidad, value); }
