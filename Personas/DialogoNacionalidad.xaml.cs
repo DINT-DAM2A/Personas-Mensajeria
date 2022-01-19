@@ -8,14 +8,17 @@ namespace Personas
     /// </summary>
     public partial class DialogoNacionalidad : Window
     {
-
+        DialogoNacionalidadVM vm;
         public DialogoNacionalidad()
         {
             InitializeComponent();
+            vm = new DialogoNacionalidadVM();
+            this.DataContext = vm;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AceptarButton_Click(object sender, RoutedEventArgs e)
         {
+            vm.AddNacionalidad();
             DialogResult = true;
         }
     }

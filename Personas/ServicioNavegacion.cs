@@ -5,7 +5,7 @@ namespace Personas
 {
     class ServicioNavegacion
     {
-        private UserControl ListPersons;
+        private static readonly UserControl listPersons = new ListPersons();
 
         public ServicioNavegacion()
         {
@@ -18,12 +18,7 @@ namespace Personas
 
         internal UserControl AbrirListPersons()
         {
-            if (ListPersons == null)
-            {
-                ListPersons = new ListPersons();
-            }
-
-            return ListPersons;
+            return listPersons;
         }
 
         public bool? AbrirDialogoNacionalidad()

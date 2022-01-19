@@ -19,7 +19,6 @@ namespace Personas
         }
 
         private UserControl ventanaVisible;
-
         public UserControl VentanaVisible
         {
             get { return ventanaVisible; }

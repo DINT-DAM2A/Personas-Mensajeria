@@ -13,11 +13,10 @@
 
     <StackPanel Orientation="Vertical" Margin="10">
         <TextBlock>Nacionalidad</TextBlock>
-        <TextBox></TextBox>
+        <TextBox Text="{Binding Path=NewNacionalidad}"></TextBox>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
-            <!-- El Botón Aceptar de momento no tiene logica, por eso simplemente cierra la ventana con (IsCancel="True")-->
-            <Button Width="80" Margin="5,0" IsDefault="True" Click="Button_Click">Aceptar</Button>
+            <Button Width="80" Margin="5,0" IsDefault="True" Click="AceptarButton_Click">Aceptar</Button>
             <Button Width="80" IsCancel="True">Cancelar</Button>
         </StackPanel>
     </StackPanel>

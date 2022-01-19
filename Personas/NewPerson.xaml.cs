@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Windows.Controls;
 
 namespace Personas
 {

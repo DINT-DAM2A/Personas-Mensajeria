@@ -94,15 +94,19 @@
     <Compile Include="DialogoNacionalidad.xaml.cs">
       <DependentUpon>DialogoNacionalidad.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DialogoNacionalidadVM.cs" />
     <Compile Include="ListPersons.xaml.cs">
       <DependentUpon>ListPersons.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListPersonsVM.cs" />
+    <Compile Include="Message\NewNacionalidadMessage.cs" />
     <Compile Include="NewPerson.xaml.cs">
       <DependentUpon>NewPerson.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Message\NewPersonMessage.cs" />
     <Compile Include="NewPersonVM.cs" />
     <Compile Include="Persona.cs" />
+    <Compile Include="ServicioDatos.cs" />
     <Compile Include="ServicioNavegacion.cs" />
     <Page Include="DialogoNacionalidad.xaml">
       <SubType>Designer</SubType>

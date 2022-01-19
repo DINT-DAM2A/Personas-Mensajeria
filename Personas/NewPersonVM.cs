@@ -1,6 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
 using Microsoft.Toolkit.Mvvm.Input;
-using System;
 using System.Collections.ObjectModel;
 
 namespace Personas
@@ -8,23 +7,33 @@ namespace Personas
     class NewPersonVM : ObservableObject
     {
         public RelayCommand AbrirDialogo { get; }
+        public RelayCommand AddPersona { get; }
 
         private readonly ServicioNavegacion servicio;
+        private readonly ServicioDatos datos = ServicioDatos.Instance();
 
         public NewPersonVM()
         {
             servicio = new ServicioNavegacion();
             AbrirDialogo = new RelayCommand(AbrirDialogoNacionalidad);
+            AddPersona = new RelayCommand(AnyadirPersona);
+            PersonaFormulario = new Persona();
 
-            ListaNacionalidades = GetSamples();
+            ListaNacionalidades = datos.ListaNacionalidades;
         }
 
-        private ObservableCollection<String> listaNacionalidades;
-
-        public ObservableCollection<String> ListaNacionalidades
+        private ObservableCollection<string> listaNacionalidades;
+        public ObservableCollection<string> ListaNacionalidades
         {
             get { return listaNacionalidades; }
             set { SetProperty(ref listaNacionalidades, value); }
+        }
+
+        private Persona personaFormulario;
+        public Persona PersonaFormulario
+        {
+            get { return personaFormulario; }
+            set { SetProperty(ref personaFormulario, value); }
         }
 
         private void AbrirDialogoNacionalidad()
@@ -32,14 +41,10 @@ namespace Personas
             servicio.AbrirDialogoNacionalidad();
         }
 
-        private ObservableCollection<String> GetSamples()
+        private void AnyadirPersona()
         {
-            ObservableCollection<String> lista = new ObservableCollection<String>();
-            lista.Add("Italiana");
-            lista.Add("Española");
-            lista.Add("Francesa");
-
-            return lista;
+            datos.AddPersona(PersonaFormulario);
         }
+
     }
 }

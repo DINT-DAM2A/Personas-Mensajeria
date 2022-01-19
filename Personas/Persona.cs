@@ -1,6 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
 using System;
-using System.Collections.ObjectModel;
 
 namespace Personas
 {
@@ -42,17 +41,6 @@ namespace Personas
         {
             get { return nacionalidad; }
             set { SetProperty(ref nacionalidad, value); }
-        }
-
-        public static ObservableCollection<Persona> GetSamples()
-        {
-            ObservableCollection<Persona> lista = new ObservableCollection<Persona>();
-
-            lista.Add(new Persona("Pietro", 30, "Italiana"));
-            lista.Add(new Persona("Julia", 25, "Española"));
-            lista.Add(new Persona("Sophie", 35, "Francesa"));
-
-            return lista;
         }
 
     }
