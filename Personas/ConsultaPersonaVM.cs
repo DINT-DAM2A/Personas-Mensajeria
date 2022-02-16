@@ -4,7 +4,7 @@ using Personas.Message;
 
 namespace Personas
 {
-    class ConsultaPersonaVM : ObservableObject
+    class ConsultaPersonaVM : ObservableRecipient
     {
         public ConsultaPersonaVM()
         {

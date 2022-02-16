@@ -59,7 +59,7 @@ namespace Personas
             {
                 ListaPersonas = GetSamplesPersonas();
 
-                //Listener que recibe altas de nuevas nacionalidades
+                //Listener que recibe altas de nuevas personas
                 WeakReferenceMessenger.Default.Register<NewPersonMessage>(this, (r, m) =>
                 {
                     ListaPersonas.Add(m.Value);

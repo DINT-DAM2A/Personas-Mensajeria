@@ -4,7 +4,7 @@ using System;
 
 namespace Personas
 {
-    class DialogoNacionalidadVM : ObservableObject
+    class DialogoNacionalidadVM : ObservableRecipient
     {
         public DialogoNacionalidadVM()
         {

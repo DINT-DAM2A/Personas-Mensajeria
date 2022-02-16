@@ -5,7 +5,7 @@ using System.Collections.ObjectModel;
 
 namespace Personas
 {
-    class ListPersonsVM : ObservableObject
+    class ListPersonsVM : ObservableRecipient
     {
         private readonly ServicioDatos datos = ServicioDatos.Instance();
 

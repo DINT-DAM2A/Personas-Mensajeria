@@ -2,7 +2,5 @@
 
 namespace Personas.Message
 {
-    class SelectedPersonMessage : RequestMessage<Persona>
-    {
-    }
+    class SelectedPersonMessage : RequestMessage<Persona> { }
 }
